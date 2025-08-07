@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState } from "react";
 
 interface FeedbackData {
   drawingData: number[][]
@@ -9,7 +9,7 @@ interface FeedbackData {
 }
 
 export function useFeedback() {
-  const URL = "https://digits-predictor.onrender.com"
+  const URL = "https://digit-detector.onrender.com/"
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
