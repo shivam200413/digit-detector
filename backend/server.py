@@ -29,9 +29,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-def say_hello():
-    return {"hello":"hi cvam here"}
 
 @app.post("/predict")
 def predict(data: PredictionInput):
