@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 export function usePrediction() {
-  const URL = "https://digits-predictor.onrender.com"
+  const URL = "https://digit-detector.onrender.com/"
   const [prediction, setPrediction] = useState<number | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
